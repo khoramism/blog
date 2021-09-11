@@ -1,16 +1,11 @@
 from django.db import models
 from ckeditor_uploader.fields import RichTextUploadingField
 from django.utils import timezone
+from django.urls import reverse
 # Create your models here.
 
 
 class Article(models.Model):
-	DISCUTIONS = (
-		('shop', 'فروشگاه'),
-		('customer', 'مشتری'),
-		('avatar', 'آگهی'),
-
-		)
 	STATUS_CHOICES = (
 		('draft', 'در حال انتظار'),
 		('published', 'منتشر شده'),
@@ -31,9 +26,6 @@ class Article(models.Model):
 
 	status = models.CharField(max_length=60, choices = STATUS_CHOICES, default='draft', verbose_name='وضعیت')
 
-	# ... fields here
-	tag = models.CharField(choices=DISCUTIONS, max_length=20)
-
 	def get_absolute_url(self):
 
-		return reverse("blog:detail", args =[self.tag,self.slug])
+		return reverse("blog:detail", args =[self.slug])

@@ -7,6 +7,6 @@ app_name = 'blog'
 
 
 urlpatterns = [
-    re_path(r'<str:tag>/(?P<slug>[-\w]+)/', views.detail, name='detail_view'),
-    path('', views.list_view, name='list_view')
+    re_path(r'(?P<slug>[-\w]+)/', views.detail, name='detail'),
+    path('', views.list_view, name='list')
 ]

@@ -4,8 +4,8 @@ from .models import Article
 
 
 
-def detail(request,tag, slug):
-    post = get_object_or_404(Article, tag=tag, slug=slug)
+def detail(request, slug):
+    post = get_object_or_404(Article, slug=slug)
     return render(request, 'blog/detail.html', {'post':post})
 
 
