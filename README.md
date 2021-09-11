@@ -4,10 +4,15 @@
 #### how to use it!?
 <br>
 <br>
+
 ```git clone https://github.com/khoramism/blog```
+
 <br>
 <br>
+
 ```pip install -r requirements.txt```
+
 <br>
 <br>
+
 ```python manage.py runserver```
