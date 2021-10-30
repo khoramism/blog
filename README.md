@@ -3,16 +3,24 @@
 ###### first Django code
 #### how to use it!?
 <br>
-<br>
 
 ```git clone https://github.com/khoramism/blog```
 
 <br>
+
+##### and now let's tell call Dr.Docker! 
+
 <br>
 
-```pip install -r requirements.txt```
+ ```docker-compose up```
+ 
+
+<br>
+<br>
+#### alright you are ready to go!
+###### to turn it of just enter 
 
 <br>
 <br>
 
-```python manage.py runserver```
+ ```docker-compose down```
