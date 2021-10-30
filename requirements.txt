@@ -1,2 +1,3 @@
 django
 django-ckeditor
+psycopg2-binary>=2.8
