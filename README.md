@@ -1,5 +1,5 @@
 # blog
-## this is a extremly simple minimal blog based on django and mdbootstrap 
+## this is a extremly simple minimal blog based on Django, Postgres and MDBootstrap 
 ###### first Django code
 #### how to use it!?
 <br>
